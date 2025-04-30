@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/sasank-555/my_react/static/js/main.0a719487.js",
-    "index.html": "/sasank-555/my_react/index.html",
-    "main.0a719487.js.map": "/sasank-555/my_react/static/js/main.0a719487.js.map"
+    "main.js": "/my_react/static/js/main.0a719487.js",
+    "index.html": "/my_react/index.html",
+    "main.0a719487.js.map": "/my_react/static/js/main.0a719487.js.map"
   },
   "entrypoints": [
     "static/js/main.0a719487.js"
