@@ -1,0 +1,134 @@
+.visualizer-container {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #1c1d20;
+  margin-bottom: 30px;
+}
+
+.canvas {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  border: 1px dashed #ccc;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.head-pointer {
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  color: #1c1d20;
+  font-weight: bold;
+}
+
+.node {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  border: 2px solid #1c1d20;
+  border-radius: 4px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: move;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.node:hover {
+  background-color: #f5f5f5;
+}
+
+.node.dragging {
+  opacity: 0.8;
+}
+
+.value {
+  font-weight: bold;
+  color: #1c1d20;
+}
+
+.next-pointer {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+.arrow-line {
+  position: absolute;
+  height: 2px;
+  background-color: #ff4800;
+  transform-origin: 0 0;
+}
+
+.arrow-head {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid #ff4800;
+}
+
+.null-arrow {
+  color: #1c1d20;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.control-btn {
+  background-color: #1c1d20;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.control-btn:hover {
+  background-color: #ff4800;
+}
+
+.add-node {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-node input {
+  padding: 8px;
+  border: 1px solid #1c1d20;
+  border-radius: 4px;
+  width: 60px;
+  text-align: center;
+}
+
+.add-btn {
+  background-color: #ff4800;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+}
+
+.add-btn:hover {
+  background-color: #e04100;
+}
